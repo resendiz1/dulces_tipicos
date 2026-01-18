@@ -1434,6 +1434,10 @@ footer p {
 
     .nav-toggle {
         display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
     }
 
     .subtitle {
