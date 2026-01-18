@@ -817,7 +817,7 @@ footer p {
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 8px 25px rgba(230, 57, 70, 0.4);
-    z-index: 1000;
+    z-index: 1500;
     transition: all 0.3s ease;
     animation: bounce 2s infinite;
     visibility: visible !important;
@@ -1438,6 +1438,7 @@ footer p {
         left: 50%;
         transform: translateX(-50%);
         right: auto;
+        z-index: 1001;
     }
 
     .subtitle {

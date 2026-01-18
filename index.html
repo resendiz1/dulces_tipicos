@@ -6,38 +6,58 @@
     <title>Dulces Típicos Mexicanos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
                 <i class="fas fa-candy-cane"></i>
                 <span>Dulces Mexicanos</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-                <li><a href="#productos" class="nav-link">Productos</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
-            </ul>
         </div>
     </nav>
 
-    <header id="inicio">
-        <div class="header-content">
-            <div class="colorful-bg">
-                <div class="color-block color-1"></div>
-                <div class="color-block color-2"></div>
-                <div class="color-block color-3"></div>
-                <div class="color-block color-4"></div>
-                <div class="color-block color-5"></div>
-                <div class="color-block color-6"></div>
-            </div>
-            <div class="header-text">
-                <h1><i class="fas fa-candy-cane"></i> Dulces Típicos Mexicanos <i class="fas fa-candy-cane"></i></h1>
-                <p class="subtitle"><i class="fas fa-sparkles"></i> Sabores tradicionales que endulzan el corazón <i class="fas fa-sparkles"></i></p>
+    <header id="inicio" class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-content text-center">
+                        <div class="colorful-bg">
+                            <div class="color-block color-1"></div>
+                            <div class="color-block color-2"></div>
+                            <div class="color-block color-3"></div>
+                            <div class="color-block color-4"></div>
+                            <div class="color-block color-5"></div>
+                            <div class="color-block color-6"></div>
+                        </div>
+                        <div class="header-text">
+                            <h1 class="display-4"><i class="fas fa-candy-cane"></i> Dulces Típicos Mexicanos <i class="fas fa-candy-cane"></i></h1>
+                            <p class="subtitle lead"><i class="fas fa-sparkles"></i> Sabores tradicionales que endulzan el corazón <i class="fas fa-sparkles"></i></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -125,158 +145,10 @@
             </div>
         </section>
 
-        <section class="gallery" id="productos">
+        <section class="gallery py-5" id="productos">
             <div class="container">
-                <div class="gallery-grid">
-                    <div class="gallery-item" data-product="Cocadas Caseras" data-price="45">
-                        <div class="image-wrapper">
-                            <img src="img/cocadas-caseras.jpg" alt="Cocadas caseras">
-                        </div>
-                        <h3>Cocadas Caseras</h3>
-                        <p>Deliciosas cocadas hechas con coco fresco y azúcar</p>
-                        <p class="price">$45 MXN</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('Cocadas Caseras', 45, 'img/cocadas-caseras.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
-                    </div>
-
-                    <div class="gallery-item" data-product="Cocada Mexicana" data-price="50">
-                        <div class="image-wrapper">
-                            <img src="img/Mexican-Food-Cocada.webp" alt="Cocada mexicana">
-                        </div>
-                        <h3>Cocada Mexicana</h3>
-                        <p>Tradicional dulce de coco con un toque especial</p>
-                        <p class="price">$50 MXN</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('Cocada Mexicana', 50, 'img/Mexican-Food-Cocada.webp')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
-                    </div>
-
-                    <div class="gallery-item" data-product="Alegrías" data-price="40">
-                        <div class="image-wrapper">
-                            <img src="img/postres-mexicanos-que-debes-probar-alegrias.jpg" alt="Alegrías">
-                        </div>
-                        <h3>Alegrías</h3>
-                        <p>Dulce de amaranto y miel, símbolo de alegría mexicana</p>
-                        <p class="price">$40 MXN</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('Alegrías', 40, 'img/postres-mexicanos-que-debes-probar-alegrias.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
-                    </div>
-
-                    <div class="gallery-item" data-product="Variedad de Dulces" data-price="120">
-                        <div class="image-wrapper">
-                            <img src="img/Profeco-revela-cuales-son-los-mejores-dulces-tipicos-mexicanos-para-disfrutar-sin-culpas.webp" alt="Dulces típicos mexicanos">
-                        </div>
-                        <h3>Variedad de Dulces</h3>
-                        <p>Una selección de los mejores dulces tradicionales</p>
-                        <p class="price">$120 MXN</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('Variedad de Dulces', 120, 'img/Profeco-revela-cuales-son-los-mejores-dulces-tipicos-mexicanos-para-disfrutar-sin-culpas.webp')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
-                    </div>
-
-                    <div class="gallery-item" data-product="Dulce Tradicional" data-price="35">
-                        <div class="image-wrapper">
-                            <img src="img/1.jpg" alt="Dulce mexicano 1">
-                        </div>
-                        <h3>Dulce Tradicional</h3>
-                        <p>Sabores auténticos de México</p>
-                        <p class="price">$35 MXN</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('Dulce Tradicional', 35, 'img/1.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
-                    </div>
-
-                    <div class="gallery-item" data-product="Dulce Artesanal" data-price="38">
-                        <div class="image-wrapper">
-                            <img src="img/2.jpg" alt="Dulce mexicano 2">
-                        </div>
-                        <h3>Dulce Artesanal</h3>
-                        <p>Hecho con amor y tradición</p>
-                        <p class="price">$38 MXN</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('Dulce Artesanal', 38, 'img/2.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
-                    </div>
-
-                    <div class="gallery-item" data-product="Postre Mexicano" data-price="42">
-                        <div class="image-wrapper">
-                            <img src="img/3.jpg" alt="Dulce mexicano 3">
-                        </div>
-                        <h3>Postre Mexicano</h3>
-                        <p>Endulzando momentos especiales</p>
-                        <p class="price">$42 MXN</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('Postre Mexicano', 42, 'img/3.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
-                    </div>
-
-                    <div class="gallery-item" data-product="Dulce Clásico" data-price="36">
-                        <div class="image-wrapper">
-                            <img src="img/4.jpg" alt="Dulce mexicano 4">
-                        </div>
-                        <h3>Dulce Clásico</h3>
-                        <p>Tradición en cada bocado</p>
-                        <p class="price">$36 MXN</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('Dulce Clásico', 36, 'img/4.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
-                    </div>
-
-                    <div class="gallery-item" data-product="Delicia Mexicana" data-price="40">
-                        <div class="image-wrapper">
-                            <img src="img/5.jpg" alt="Dulce mexicano 5">
-                        </div>
-                        <h3>Delicia Mexicana</h3>
-                        <p>Sabores que evocan recuerdos</p>
-                        <p class="price">$40 MXN</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('Delicia Mexicana', 40, 'img/5.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
-                    </div>
-
-                    <div class="gallery-item" data-product="Dulce Artesanal Premium" data-price="48">
-                        <div class="image-wrapper">
-                            <img src="img/6.webp" alt="Dulce mexicano 6">
-                        </div>
-                        <h3>Dulce Artesanal Premium</h3>
-                        <p>Hecho a mano con ingredientes naturales</p>
-                        <p class="price">$48 MXN</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('Dulce Artesanal Premium', 48, 'img/6.webp')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
-                    </div>
-
-                    <div class="gallery-item" data-product="Postre Tradicional" data-price="44">
-                        <div class="image-wrapper">
-                            <img src="img/7.jpg" alt="Dulce mexicano 7">
-                        </div>
-                        <h3>Postre Tradicional</h3>
-                        <p>Un clásico de la repostería mexicana</p>
-                        <p class="price">$44 MXN</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('Postre Tradicional', 44, 'img/7.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
-                    </div>
-
-                    <div class="gallery-item" data-product="Dulce Mexicano Especial" data-price="46">
-                        <div class="image-wrapper">
-                            <img src="img/8.jpg" alt="Dulce mexicano 8">
-                        </div>
-                        <h3>Dulce Mexicano Especial</h3>
-                        <p>Colores y sabores únicos</p>
-                        <p class="price">$46 MXN</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('Dulce Mexicano Especial', 46, 'img/8.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
-                    </div>
-
-                    <div class="gallery-item" data-product="Delicia Dulce" data-price="39">
-                        <div class="image-wrapper">
-                            <img src="img/9.jpg" alt="Dulce mexicano 9">
-                        </div>
-                        <h3>Delicia Dulce</h3>
-                        <p>Endulzando la tradición mexicana</p>
-                        <p class="price">$39 MXN</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('Delicia Dulce', 39, 'img/9.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
-                    </div>
-
-                    <div class="gallery-item" data-product="Dulce Típico" data-price="37">
-                        <div class="image-wrapper">
-                            <img src="img/840_560.jpg" alt="Dulce mexicano">
-                        </div>
-                        <h3>Dulce Típico</h3>
-                        <p>Sabores auténticos de nuestra tierra</p>
-                        <p class="price">$37 MXN</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('Dulce Típico', 37, 'img/840_560.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
-                    </div>
-
-                    <div class="gallery-item" data-product="Postre Mexicano Clásico" data-price="43">
-                        <div class="image-wrapper">
-                            <img src="img/Fotolia_58310754_XS.jpg" alt="Dulce mexicano">
-                        </div>
-                        <h3>Postre Mexicano Clásico</h3>
-                        <p>Tradición y sabor en cada porción</p>
-                        <p class="price">$43 MXN</p>
-                        <button class="add-to-cart-btn" onclick="addToCart('Postre Mexicano Clásico', 43, 'img/Fotolia_58310754_XS.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
-                    </div>
+                <div class="row g-4" id="galleryGrid">
+                    <!-- Los productos se agregarán dinámicamente aquí -->
                 </div>
             </div>
         </section>
@@ -361,29 +233,37 @@
         </section>
 
         <!-- Sección de Contacto -->
-        <section class="contact-section" id="contacto">
+        <section class="contact-section py-5" id="contacto">
             <div class="container">
-                <h2><i class="fas fa-envelope"></i> Contáctanos</h2>
-                <p class="contact-subtitle">¿Tienes alguna pregunta o comentario? ¡Nos encantaría escucharte!</p>
-                <form class="contact-form" onsubmit="event.preventDefault(); correo();">
-                    <div class="form-group">
-                        <label for="nombre">Nombre *</label>
-                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-center mb-4"><i class="fas fa-envelope"></i> Contáctanos</h2>
+                        <p class="contact-subtitle text-center mb-4">¿Tienes alguna pregunta o comentario? ¡Nos encantaría escucharte!</p>
+                        <form class="contact-form bg-light p-4 rounded shadow" onsubmit="event.preventDefault(); correo();">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="nombre" class="form-label">Nombre *</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="telefono" class="form-label">Teléfono *</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" required placeholder="Tu número de teléfono">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje *</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" required rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-danger btn-lg px-5">
+                                    <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                                </button>
+                            </div>
+                            <div id="error" class="form-message error d-none"></div>
+                            <div id="success" class="form-message success d-none">¡Mensaje enviado exitosamente! Te responderemos pronto.</div>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="telefono">Teléfono *</label>
-                        <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de teléfono">
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje *</label>
-                        <textarea id="mensaje" name="mensaje" required rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">
-                        Enviar Mensaje
-                    </button>
-                    <div id="error" class="form-message error d-none"></div>
-                    <div id="success" class="form-message success d-none">¡Mensaje enviado exitosamente! Te responderemos pronto.</div>
-                </form>
+                </div>
             </div>
         </section>
     </main>
@@ -424,12 +304,61 @@
     <!-- EmailJS SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         AOS.init({
             duration: 1000,
             once: true,
             offset: 100
         });
+
+        // Cargar productos dinámicamente con Bootstrap
+        const products = [
+            { name: "Cocadas Caseras", price: 45, image: "img/cocadas-caseras.jpg", description: "Deliciosas cocadas hechas con coco fresco y azúcar" },
+            { name: "Cocada Mexicana", price: 50, image: "img/Mexican-Food-Cocada.webp", description: "Tradicional dulce de coco con un toque especial" },
+            { name: "Alegrías", price: 40, image: "img/postres-mexicanos-que-debes-probar-alegrias.jpg", description: "Dulce de amaranto y miel, símbolo de alegría mexicana" },
+            { name: "Variedad de Dulces", price: 120, image: "img/Profeco-revela-cuales-son-los-mejores-dulces-tipicos-mexicanos-para-disfrutar-sin-culpas.webp", description: "Una selección de los mejores dulces tradicionales" },
+            { name: "Dulce Tradicional", price: 35, image: "img/1.jpg", description: "Sabores auténticos de México" },
+            { name: "Dulce Artesanal", price: 38, image: "img/2.jpg", description: "Hecho con amor y tradición" },
+            { name: "Postre Mexicano", price: 42, image: "img/3.jpg", description: "Endulzando momentos especiales" },
+            { name: "Dulce Clásico", price: 36, image: "img/4.jpg", description: "Tradición en cada bocado" },
+            { name: "Delicia Mexicana", price: 40, image: "img/5.jpg", description: "Sabores que evocan recuerdos" },
+            { name: "Dulce Artesanal Premium", price: 48, image: "img/6.webp", description: "Hecho a mano con ingredientes naturales" },
+            { name: "Postre Tradicional", price: 44, image: "img/7.jpg", description: "Un clásico de la repostería mexicana" },
+            { name: "Dulce Mexicano Especial", price: 46, image: "img/8.jpg", description: "Colores y sabores únicos" },
+            { name: "Delicia Dulce", price: 39, image: "img/9.jpg", description: "Endulzando la tradición mexicana" },
+            { name: "Dulce Típico", price: 37, image: "img/840_560.jpg", description: "Sabores auténticos de nuestra tierra" },
+            { name: "Postre Mexicano Clásico", price: 43, image: "img/Fotolia_58310754_XS.jpg", description: "Tradición y sabor en cada porción" }
+        ];
+
+        function loadProducts() {
+            const galleryGrid = document.getElementById('galleryGrid');
+            
+            products.forEach(product => {
+                const productCol = document.createElement('div');
+                productCol.className = 'col-md-6 col-lg-4';
+                productCol.setAttribute('data-aos', 'fade-up');
+                
+                productCol.innerHTML = `
+                    <div class="card h-100 gallery-item" data-product="${product.name}" data-price="${product.price}">
+                        <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">${product.name}</h5>
+                            <p class="card-text flex-grow-1">${product.description}</p>
+                            <p class="price h4 text-danger">$${product.price} MXN</p>
+                            <button class="btn btn-danger w-100 add-to-cart-btn" onclick="addToCart('${product.name}', ${product.price}, '${product.image}')">
+                                <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+                            </button>
+                        </div>
+                    </div>
+                `;
+                
+                galleryGrid.appendChild(productCol);
+            });
+        }
+
+        // Cargar productos cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', loadProducts);
     </script>
     
     <script src="script.js"></script>
