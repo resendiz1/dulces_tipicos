@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulces Típicos Mexicanos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-candy-cane"></i>
+                <span>Dulces Mexicanos</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#productos" class="nav-link">Productos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio">
+        <div class="header-content">
+            <div class="colorful-bg">
+                <div class="color-block color-1"></div>
+                <div class="color-block color-2"></div>
+                <div class="color-block color-3"></div>
+                <div class="color-block color-4"></div>
+                <div class="color-block color-5"></div>
+                <div class="color-block color-6"></div>
+            </div>
+            <div class="header-text">
+                <h1><i class="fas fa-candy-cane"></i> Dulces Típicos Mexicanos <i class="fas fa-candy-cane"></i></h1>
+                <p class="subtitle"><i class="fas fa-sparkles"></i> Sabores tradicionales que endulzan el corazón <i class="fas fa-sparkles"></i></p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Carousel Section -->
+        <section class="carousel-section">
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-slide active">
+                        <img src="img/cocadas-caseras.jpg" alt="Cocadas">
+                        <div class="carousel-text">
+                            <h2>Cocadas Caseras</h2>
+                            <p>Deliciosas cocadas hechas con coco fresco y azúcar, un dulce tradicional que endulza cada momento</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/postres-mexicanos-que-debes-probar-alegrias.jpg" alt="Alegrías">
+                        <div class="carousel-text">
+                            <h2>Alegrías</h2>
+                            <p>Dulce de amaranto y miel, símbolo de alegría mexicana que ha endulzado generaciones</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/Profeco-revela-cuales-son-los-mejores-dulces-tipicos-mexicanos-para-disfrutar-sin-culpas.webp" alt="Dulces mexicanos">
+                        <div class="carousel-text">
+                            <h2>Variedad de Dulces</h2>
+                            <p>Una selección de los mejores dulces tradicionales mexicanos, cada uno con su historia única</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/Mexican-Food-Cocada.webp" alt="Cocada mexicana">
+                        <div class="carousel-text">
+                            <h2>Cocada Mexicana</h2>
+                            <p>Tradicional dulce de coco con un toque especial que evoca los sabores de nuestra tierra</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/1.jpg" alt="Dulces tradicionales">
+                        <div class="carousel-text">
+                            <h2>Dulces Tradicionales</h2>
+                            <p>Sabores auténticos de México que han sido preservados a través de generaciones</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="intro-background"></div>
+            <div class="container">
+                <div class="intro-content">
+                    <div class="intro-images">
+                        <div class="intro-image-wrapper">
+                            <img src="img/cocadas-caseras.jpg" alt="Cocadas">
+                        </div>
+                        <div class="intro-image-wrapper">
+                            <img src="img/postres-mexicanos-que-debes-probar-alegrias.jpg" alt="Alegrías">
+                        </div>
+                        <div class="intro-image-wrapper">
+                            <img src="img/Mexican-Food-Cocada.webp" alt="Dulces mexicanos">
+                        </div>
+                    </div>
+                    <div class="intro-text">
+                        <h2> Una Tradición Dulce </h2>
+                        <p>Descubre la rica tradición de los dulces mexicanos, una herencia culinaria que ha endulzado generaciones con sus sabores únicos y colores vibrantes.</p>
+                        <p class="intro-subtitle">Cada dulce cuenta una historia de tradición, familia y el auténtico sabor de México</p>
+                    </div>
+                    <div class="intro-decorations">
+                        <i class="fas fa-heart decoration "></i>
+                        <i class="fas fa-star decoration "></i>
+                        <i class="fas fa-circle decoration "></i>
+                        <i class="fas fa-fire decoration "></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="productos">
+            <div class="container">
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-product="Cocadas Caseras" data-price="45">
+                        <div class="image-wrapper">
+                            <img src="img/cocadas-caseras.jpg" alt="Cocadas caseras">
+                        </div>
+                        <h3>Cocadas Caseras</h3>
+                        <p>Deliciosas cocadas hechas con coco fresco y azúcar</p>
+                        <p class="price">$45 MXN</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Cocadas Caseras', 45, 'img/cocadas-caseras.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                    </div>
+
+                    <div class="gallery-item" data-product="Cocada Mexicana" data-price="50">
+                        <div class="image-wrapper">
+                            <img src="img/Mexican-Food-Cocada.webp" alt="Cocada mexicana">
+                        </div>
+                        <h3>Cocada Mexicana</h3>
+                        <p>Tradicional dulce de coco con un toque especial</p>
+                        <p class="price">$50 MXN</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Cocada Mexicana', 50, 'img/Mexican-Food-Cocada.webp')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                    </div>
+
+                    <div class="gallery-item" data-product="Alegrías" data-price="40">
+                        <div class="image-wrapper">
+                            <img src="img/postres-mexicanos-que-debes-probar-alegrias.jpg" alt="Alegrías">
+                        </div>
+                        <h3>Alegrías</h3>
+                        <p>Dulce de amaranto y miel, símbolo de alegría mexicana</p>
+                        <p class="price">$40 MXN</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Alegrías', 40, 'img/postres-mexicanos-que-debes-probar-alegrias.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                    </div>
+
+                    <div class="gallery-item" data-product="Variedad de Dulces" data-price="120">
+                        <div class="image-wrapper">
+                            <img src="img/Profeco-revela-cuales-son-los-mejores-dulces-tipicos-mexicanos-para-disfrutar-sin-culpas.webp" alt="Dulces típicos mexicanos">
+                        </div>
+                        <h3>Variedad de Dulces</h3>
+                        <p>Una selección de los mejores dulces tradicionales</p>
+                        <p class="price">$120 MXN</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Variedad de Dulces', 120, 'img/Profeco-revela-cuales-son-los-mejores-dulces-tipicos-mexicanos-para-disfrutar-sin-culpas.webp')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                    </div>
+
+                    <div class="gallery-item" data-product="Dulce Tradicional" data-price="35">
+                        <div class="image-wrapper">
+                            <img src="img/1.jpg" alt="Dulce mexicano 1">
+                        </div>
+                        <h3>Dulce Tradicional</h3>
+                        <p>Sabores auténticos de México</p>
+                        <p class="price">$35 MXN</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Dulce Tradicional', 35, 'img/1.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                    </div>
+
+                    <div class="gallery-item" data-product="Dulce Artesanal" data-price="38">
+                        <div class="image-wrapper">
+                            <img src="img/2.jpg" alt="Dulce mexicano 2">
+                        </div>
+                        <h3>Dulce Artesanal</h3>
+                        <p>Hecho con amor y tradición</p>
+                        <p class="price">$38 MXN</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Dulce Artesanal', 38, 'img/2.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                    </div>
+
+                    <div class="gallery-item" data-product="Postre Mexicano" data-price="42">
+                        <div class="image-wrapper">
+                            <img src="img/3.jpg" alt="Dulce mexicano 3">
+                        </div>
+                        <h3>Postre Mexicano</h3>
+                        <p>Endulzando momentos especiales</p>
+                        <p class="price">$42 MXN</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Postre Mexicano', 42, 'img/3.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                    </div>
+
+                    <div class="gallery-item" data-product="Dulce Clásico" data-price="36">
+                        <div class="image-wrapper">
+                            <img src="img/4.jpg" alt="Dulce mexicano 4">
+                        </div>
+                        <h3>Dulce Clásico</h3>
+                        <p>Tradición en cada bocado</p>
+                        <p class="price">$36 MXN</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Dulce Clásico', 36, 'img/4.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                    </div>
+
+                    <div class="gallery-item" data-product="Delicia Mexicana" data-price="40">
+                        <div class="image-wrapper">
+                            <img src="img/5.jpg" alt="Dulce mexicano 5">
+                        </div>
+                        <h3>Delicia Mexicana</h3>
+                        <p>Sabores que evocan recuerdos</p>
+                        <p class="price">$40 MXN</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Delicia Mexicana', 40, 'img/5.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                    </div>
+
+                    <div class="gallery-item" data-product="Dulce Artesanal Premium" data-price="48">
+                        <div class="image-wrapper">
+                            <img src="img/6.webp" alt="Dulce mexicano 6">
+                        </div>
+                        <h3>Dulce Artesanal Premium</h3>
+                        <p>Hecho a mano con ingredientes naturales</p>
+                        <p class="price">$48 MXN</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Dulce Artesanal Premium', 48, 'img/6.webp')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                    </div>
+
+                    <div class="gallery-item" data-product="Postre Tradicional" data-price="44">
+                        <div class="image-wrapper">
+                            <img src="img/7.jpg" alt="Dulce mexicano 7">
+                        </div>
+                        <h3>Postre Tradicional</h3>
+                        <p>Un clásico de la repostería mexicana</p>
+                        <p class="price">$44 MXN</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Postre Tradicional', 44, 'img/7.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                    </div>
+
+                    <div class="gallery-item" data-product="Dulce Mexicano Especial" data-price="46">
+                        <div class="image-wrapper">
+                            <img src="img/8.jpg" alt="Dulce mexicano 8">
+                        </div>
+                        <h3>Dulce Mexicano Especial</h3>
+                        <p>Colores y sabores únicos</p>
+                        <p class="price">$46 MXN</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Dulce Mexicano Especial', 46, 'img/8.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                    </div>
+
+                    <div class="gallery-item" data-product="Delicia Dulce" data-price="39">
+                        <div class="image-wrapper">
+                            <img src="img/9.jpg" alt="Dulce mexicano 9">
+                        </div>
+                        <h3>Delicia Dulce</h3>
+                        <p>Endulzando la tradición mexicana</p>
+                        <p class="price">$39 MXN</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Delicia Dulce', 39, 'img/9.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                    </div>
+
+                    <div class="gallery-item" data-product="Dulce Típico" data-price="37">
+                        <div class="image-wrapper">
+                            <img src="img/840_560.jpg" alt="Dulce mexicano">
+                        </div>
+                        <h3>Dulce Típico</h3>
+                        <p>Sabores auténticos de nuestra tierra</p>
+                        <p class="price">$37 MXN</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Dulce Típico', 37, 'img/840_560.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                    </div>
+
+                    <div class="gallery-item" data-product="Postre Mexicano Clásico" data-price="43">
+                        <div class="image-wrapper">
+                            <img src="img/Fotolia_58310754_XS.jpg" alt="Dulce mexicano">
+                        </div>
+                        <h3>Postre Mexicano Clásico</h3>
+                        <p>Tradición y sabor en cada porción</p>
+                        <p class="price">$43 MXN</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Postre Mexicano Clásico', 43, 'img/Fotolia_58310754_XS.jpg')"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2>Sobre los Dulces Mexicanos</h2>
+                <p>Los dulces típicos mexicanos son una parte fundamental de nuestra cultura gastronómica. Desde las cocadas hasta las alegrías, cada dulce cuenta una historia de tradición, familia y sabor. Estos deliciosos manjares han sido elaborados durante generaciones, preservando técnicas artesanales y sabores únicos que hacen de México un paraíso para los amantes de los dulces.</p>
+            </div>
+        </section>
+
+        <!-- Sección Nosotros -->
+        <section class="nosotros-section" id="nosotros">
+            <div class="container">
+                <h2 data-aos="fade-up">Nuestra Historia</h2>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2015 – Fundación</h3>
+                            <p>Dulce Encanto nació como un pequeño local familiar en el centro de la ciudad, con la idea de rescatar los dulces tradicionales mexicanos y combinarlos con golosinas modernas. Al inicio solo se vendían paletas, gomitas, chocolates y botanas enchiladas preparadas a mano.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2016 – Crecimiento local</h3>
+                            <p>Gracias a la buena aceptación de los clientes y al boca en boca, la tienda comenzó a ser reconocida por su calidad y precios accesibles. Se ampliaron los productos, agregando mix personalizados, regalos dulceros y ventas por pedido.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2018 – Primera expansión</h3>
+                            <p>Se inauguró la segunda sucursal en una zona comercial más concurrida. Con esto, la marca empezó a posicionarse como una opción confiable para fiestas, escuelas y eventos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2020 – Adaptación digital</h3>
+                            <p>Durante este año se implementaron pedidos por WhatsApp y redes sociales. También se lanzó un pequeño catálogo en línea para facilitar compras a domicilio, lo que permitió mantener el flujo de ventas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2022 – Imagen y marca</h3>
+                            <p>Dulce Encanto renovó su imagen, empaques y presentación. Se incluyeron productos exclusivos y marcas importadas, además de combos especiales para temporadas como Día del Niño, Halloween y Navidad.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2023 – Tercera sucursal</h3>
+                            <p>Se abrió una nueva tienda con un concepto más moderno y autoservicio, mejorando la experiencia del cliente y reduciendo tiempos de atención.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2024 – Consolidación</h3>
+                            <p>La empresa se consolidó como una de las dulcerías más buscadas de la región, atendiendo tanto a público general como a negocios pequeños, escuelas y organizadores de eventos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2025 – Proyección a futuro</h3>
+                            <p>Dulce Encanto comienza a trabajar en su tienda en línea formal y en un sistema de envíos, con la meta de expandirse a más ciudades y fortalecer su presencia digital.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section class="contact-section" id="contacto">
+            <div class="container">
+                <h2><i class="fas fa-envelope"></i> Contáctanos</h2>
+                <p class="contact-subtitle">¿Tienes alguna pregunta o comentario? ¡Nos encantaría escucharte!</p>
+                <form class="contact-form" onsubmit="event.preventDefault(); correo();">
+                    <div class="form-group">
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono *</label>
+                        <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" required rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Enviar Mensaje
+                    </button>
+                    <div id="error" class="form-message error d-none"></div>
+                    <div id="success" class="form-message success d-none">¡Mensaje enviado exitosamente! Te responderemos pronto.</div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Dulces Típicos Mexicanos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Carrito Flotante -->
+    <div class="cart-icon" onclick="toggleCart()">
+        <span class="cart-icon-symbol"><i class="fas fa-shopping-cart"></i></span>
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <!-- Modal del Carrito -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2><i class="fas fa-shopping-cart"></i> Mi Carrito</h2>
+                <button class="close-cart" onclick="toggleCart()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Tu carrito está vacío</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total: $<span id="cartTotal">0</span> MXN</strong>
+                </div>
+                <button class="whatsapp-btn" onclick="sendToWhatsApp()" id="whatsappBtn" disabled>
+                    <i class="fab fa-whatsapp"></i> Enviar Pedido por WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+    
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script src="contact.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>
