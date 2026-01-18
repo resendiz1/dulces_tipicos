@@ -1445,14 +1445,9 @@ footer p {
         font-size: 1.5em;
     }
 
-    header {
-        margin-top: 60px;
-        padding: 100px 0 60px;
-    }
-
     .about p {
         font-size: 1em;
-        padding: 0 15px;
+        padding: 0 0;
     }
     
     .about h2 {
