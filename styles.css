@@ -1,8 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ==== FIX OVERFLOW MOBILE ==== */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+
 
 :root {
     /* Paleta de colores basada en la imagen paleta_colores.jpg */
